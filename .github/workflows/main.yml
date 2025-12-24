@@ -25,6 +25,10 @@ jobs:
           java-version: 17
           cache: 'gradle'
 
+      - name: Make Gradle Executable
+        run: |
+          chmod +x ./gradlew
+
       - name: Build with Gradle
         run: |
           ./gradlew clean build
