@@ -6,6 +6,9 @@ on:
       - dependabot/**
   pull_request:
 
+permissions:
+  contents: read
+
 jobs:
   build:
     name: Build with Gradle
